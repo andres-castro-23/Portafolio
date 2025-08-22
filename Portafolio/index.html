@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Mi portafolio</title>
+</head>
+<body>
+    <header>
+        <h1>De donde vengo, a donde voy</h1>
+        <nav class="nav">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="sobre-mi" class="about">
+            <div class="about__section">
+                <div class="content">
+                    <div class="title about__title">
+                        <span class="material-symbols-outlined icon icon--1" style="font-size: 34px;">emoji_people</span>
+                        <h2>Sobre mi</h2>
+                    </div>
+                    <p>Hola, soy Andrés, me entusiasma el desarrollo web que combina creatividad técnica y disciplina personal. Busco dar el salto profesional en tecnología mientras sigo aprendiendo y evolucionando.</p>
+                </div>
+                    <img src="Images/andres_castro.jpeg" alt="Andres Castro" class="image image--1">
+            </div>
+
+
+            <div class="about__section">
+                <img src="Images/technology.jpg" alt="tecnologia" class="image">
+                <div class="content">
+                    <div class="title about__title">
+                        <span class="material-symbols-outlined icon icon--2" style="font-size: 34px;">computer</span>
+                        <h4>Pasión por la tecnología</h4>
+                    </div>
+                    <p>Me especializo en HTML, CSS y JavaScript, y tengo sólidos conocimientos de hardware gracias a que armé mi propia computadora. Disfruto el aprendizaje constante, escucho podcasts en inglés y he completado cursos online que han reforzado mi nivel intermedio del idioma.</p>
+                </div>
+            </div>
+
+
+            <div class="about__section">
+                <div class="content">
+                    <div class="title about__title">
+                        <span class="material-symbols-outlined icon icon--3" style="font-size: 34px;">exercise</span>
+                        <h4>Disciplina que transforma</h4>
+                    </div>
+                    <p>La constancia forma parte esencial de mi vida gracias a el culturismo y tengo el objetivo de competir en la categoría Classic Physique. Además, me dedico a crecer de manera integral con lecturas sobre desarrollo personal, finanzas, espiritualidad y relaciones.</p>
+                </div>
+                <img src="Images/discipline.png" alt="gimnasio" class="image">
+            </div>
+
+
+            <div class="about__section">
+                <img src="Images/science.jpg" alt="science" class="image">
+                <div class="content">
+                    <div class="title about__title">
+                        <span class="material-symbols-outlined icon icon--4" style="font-size: 34px;">lab_research</span>
+                        <h4>Enfoque basado en evidencia</h4>
+                    </div>
+                    <p>Investigo y aplico información respaldada por la ciencia para optimizar mi entrenamiento y rendimiento, buscando siempre resultados medibles y efectivos.</p>
+                                </div>
+                </div>
+        </section>
+        <section id="habilidades" class="skills">
+            <div class="title skills__title">
+                    <span class="material-symbols-outlined skills__icon" style="font-size: 34px;">construction</span>
+                    <h2>Habilidades</h2>
+            </div>
+            <ul>
+                <li class="list-item"><span class="material-symbols-outlined code">code</span><strong>Desarrollo web</strong> con HTML, CSS y JavaScript</li>
+                <li class="list-item"><span class="material-symbols-outlined computer">computer</span><strong>Montaje y mantenimiento de PC,</strong> ensamblaje y conocimientos de hardware</li>
+                <li class="list-item"><span class="material-symbols-outlined fitness">fitness_center</span><strong>Optimización de entrenamiento</strong> basada en evidencia científica</li>
+                <li class="list-item"><span class="material-symbols-outlined constancy">trending_up</span><strong>Disciplina y constancia</strong> gracias a la práctica del culturismo</li>
+                <li class="list-item"><span class="material-symbols-outlined">auto_stories</span><strong>Lectura y autoaprendizaje</strong> en desarrollo personal, finanzas, espiritualidad y relaciones
+                </li>
+                <li class="list-item"><span class="material-symbols-outlined english">language</span><strong>Inglés intermedio</strong> potenciado mediante podcasts y cursos
+                </li>
+            </ul>
+        </section>
+        <section id="contacto" class="contact">
+            <div class="title contact__title">
+                    <span class="material-symbols-outlined contact__icon" style="font-size: 34px;">mail</span>
+                    <h2>Contacto</h2>
+            </div>
+            <p>Si quieres trabajar conmigo o saber más sobre mis proyectos, ¡escríbeme!</p>
+            <form action="https://formspree.io/f/xdkdrevd" method="POST" class="contact-form">
+                <label>
+                    Tu correo:
+                    <input type="email" name="email"  required class="e-mail">
+                </label>
+                <label>
+                    Mensaje:
+                    <textarea name="message" class="message" rows="6" ></textarea>
+                </label>
+                <button type="submit" class="submit-button">ENVIAR</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Andrés - Todos los derechos reservados</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
