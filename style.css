@@ -1,0 +1,308 @@
+/* RESET CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+picture {
+    max-width: 100%;
+}
+
+/* WEB STYLES STARTS */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: lato,sans-serif;
+    color: #222;
+    font-size: 14px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: url(Images/background.JPG) center/cover ;
+    color: #ddd;
+    height: 90dvh;
+}
+
+h1 {
+    margin: auto;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    transition: position 1s,top 1s,background-color 1s;
+}
+
+.nav a {
+    transition: color .2s;
+}
+
+.nav a:hover {
+    color: rgb(116, 154, 211);
+}
+
+/* about section */
+
+.container {
+    padding: 50px;
+    background: linear-gradient(to top, transparent 0% 98%,#000) ;
+}
+
+.content {
+    width: clamp(300px,40%,500px);
+}
+
+.about__section {
+    margin: 100px auto;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px dashed #000;
+    padding: 65px 30px;
+    border-radius: 16px;
+}
+
+.image {
+    border-radius: 50%;
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+}
+
+.about__title {
+    margin: 10px auto; 
+}
+
+.icon--1 {
+    color: #ffc107;
+}
+
+.icon--2 {
+    color: #48e;
+}
+
+.icon--3 {
+    color: #2aae8c;
+}
+
+.icon--4 {
+    color: #4a4a4a;
+}
+
+.about h4 {
+    font-size: 1.2em;
+}
+
+.about p {
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+/* skills section */
+
+.skills {
+    margin: 100px auto;
+    width: fit-content;
+}
+
+.title__icon {
+    color: #185180;
+}
+
+.skills__title {
+    margin: 30px auto;
+}
+
+.list-item {
+    display: flex;
+    gap: 2px;
+    width: fit-content;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.code {
+    color: #00828b;
+}
+
+.computer {
+    color: #48e;
+}
+
+.fitness {
+    color: #2aae8c;
+}
+
+.constancy {
+    color: #6d6d6d;
+}
+
+.english {
+    color: rgb(114, 26, 26);
+}
+/* form section */
+
+.contact {
+    margin: auto;
+}
+
+
+.contact__title,
+.contact p {
+    margin: 15px auto;
+    width: fit-content;
+}
+
+.contact__icon {
+    color: #5724aa;
+}
+
+.contact-form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.e-mail,
+.message {
+    margin-top: 10px;
+    padding: 8px;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 500px;
+    outline: none;
+}
+
+.message {
+    resize: none;
+}
+
+.submit-button {
+    width: fit-content;
+    padding: 7px;
+    border: 1px solid #222;
+    border-radius: 3px;
+    background-color: #00828b;
+    color: #eee;
+}
+
+/* footer section */
+
+footer {
+    background-color: #222;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* QUERIES */
+
+@media screen and (max-width:500px){
+    body {
+        font-size: 8px;
+    }
+
+    header {
+        height: 85dvh;
+        background-image: url(Images/background-small.JPG);
+    }
+
+    .about__section {
+        width: 100%;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 45px auto;
+        border: 1.9px dashed #000;
+    }
+
+    .skills {
+        margin: 45px auto;
+    }
+
+    .skills__title {
+        margin: 10px auto;
+    }
+
+    .icon,
+    .skills__icon,
+    .contact__icon,
+    .title__icon {
+        font-size: 15px !important;
+    }
+
+    .skills__icon {
+        margin-right: 3px;
+    }
+
+    .list-item {
+        margin: 8px auto;
+    }
+
+    .title {
+        gap: 6px;
+    }
+
+    .e-mail,
+    .message {
+        width: 300px;
+        padding: 3px;
+        margin-top: 4px;
+    }
+
+    .contact__title,
+    .contact p {
+    margin: 5px auto;
+    width: fit-content;
+    }
+
+    .contact-form {
+        margin-top: 10px;
+    }
+
+    .submit-button {
+        padding: 3px;
+    }
+
+    footer {
+        padding: 20px;
+        margin-top: 0;
+    }
+}
