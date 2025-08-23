@@ -126,7 +126,7 @@ h1 {
 
 .about p {
     white-space: pre-wrap;
-    text-align: center;
+    text-align: justify;
 }
 
 /* skills section */
@@ -301,3 +301,4 @@ footer {
     }
 
 }
+
