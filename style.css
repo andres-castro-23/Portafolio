@@ -247,6 +247,7 @@ footer {
         padding: 20px;
         margin: 45px auto;
         border: 1.9px dashed #000;
+        box-shadow: none;
     }
 
     .skills {
@@ -302,5 +303,6 @@ footer {
     }
 
 }
+
 
 
