@@ -87,6 +87,7 @@ h1 {
     border: 3px dashed #000;
     padding: 65px 30px;
     border-radius: 16px;    
+    box-shadow: 0 0 30px #000;
 }
 
 .image {
@@ -246,6 +247,7 @@ footer {
         padding: 20px;
         margin: 45px auto;
         border: 1.9px dashed #000;
+        box-shadow: none;
     }
 
     .skills {
@@ -301,6 +303,7 @@ footer {
     }
 
 }
+
 
 
 
